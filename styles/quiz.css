@@ -1,0 +1,469 @@
+/*  *{
+margin: 0px;
+padding: 0px;
+}
+
+main{
+    overflow: hidden;
+}
+
+section:first-of-type {
+    text-align: center;
+}
+
+section:first-of-type h1 {
+    text-transform: capitalize;
+    border: solid 2px;
+    background-color: coral;
+    color:#fff;
+    box-shadow: 1px 1px 4px black;
+}
+
+span h2{
+    border: solid 1px;
+    width:fit-content;
+    padding: 5px;
+    margin-left: 167%;
+    margin-top: 10px;
+    transition: 2s;
+}
+
+section:last-of-type {
+    background-color:coral;
+    width: 25rem;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px black;
+}
+
+section:last-of-type div:first-of-type h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+section:last-of-type div:last-of-type ul {
+    list-style-type: none;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 25px;
+}
+
+section:last-of-type div:last-of-type ul li {
+    padding: 3px;
+    text-transform: capitalize;
+    margin-top: 16px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    width: 150px;
+}
+
+section:last-of-type div:last-of-type ul li:hover {
+    box-shadow: 1px 1px 20px black;
+} */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main {
+    /* margin: 0 100px; */
+    /* margin: 0 10%; */
+    margin: 0 2.5rem;
+}
+
+.navBar {
+    margin-top: 1rem;
+}
+
+.navBar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar > div > h1 {
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.navBar > div > ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30rem;
+}
+
+.navBar > div > ul > li {
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.navBar > div > button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    background-color: darkgray;
+    border: none;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+
+.navBar > div > button:hover {
+    cursor: pointer;
+}
+
+.banner {
+    margin-top: 2rem;
+}
+
+.banner > div {
+    width: 90%;
+    height: 15em;
+    margin: 0 auto;
+    background-color: darkgray;
+    border-radius: 0.5rem;
+}
+
+.first {
+    margin-top: 2rem;
+}
+
+.first > h1 {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.first > main {
+    display: inline-flex;
+    justify-content: space-evenly;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.first > main > div:first-of-type{
+    width:48%;
+    border-radius: 0.5rem;
+}
+
+.first > main > div:first-of-type > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.first > main > div:last-of-type{
+    width:48%;
+    height: 15rem;
+    border-radius: 0.5rem;
+    background-color: darkgray;
+}
+
+.second {
+    margin-top: 2rem;
+}
+
+.second > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.second > main {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 2rem;
+}
+
+.second > main > div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 14rem;
+    box-shadow: 2px 2px 4px 2px #333;
+    border-radius: 1rem;
+}
+
+.second > main > div > span > p {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 0.5rem;
+    background-color: darkgray;
+}
+
+.third {
+    margin-top: 2rem;
+}
+
+.third > h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.third > main {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third > main > div:first-of-type {
+    background-color: darkgray;
+    height: 12rem;
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.third > main > div:last-of-type {
+    width: 25%;
+}
+
+.third > main > div:last-of-type > span:first-of-type {
+    display:flex;
+    justify-content: space-between;
+}
+
+.third > main > div:last-of-type > span:first-of-type > p {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 1rem;
+    background-color: darkgray;
+}
+
+.third > main > div:last-of-type > span:last-of-type {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+} 
+
+.third > main > div:last-of-type > span:last-of-type > h2 {
+    font-size:2rem;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+footer > h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+}
+
+footer > main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > main > ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 2rem;
+    text-transform: capitalize;
+    width: 48%;
+}
+
+footer > main > ul > li {
+    margin-top: 1rem;
+    border-bottom: solid 1px darkgray;
+}
+
+footer > main > div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 44%;
+}
+
+footer > main > div > p {
+    background-color: darkgray;
+    border-radius: 1rem;
+    width: 8rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+footer > h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.navBar > div > span {
+    display: none;
+}
+
+@media screen and (max-width: 1150px) {
+    main {
+        /* margin: 0 100px; */
+        /* margin: 0 10%; */
+        margin: 0 1rem;
+    }
+
+    .first > main > div:first-of-type > p {
+        font-size: 1.2rem;
+    }
+
+    .second > main {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        place-items: center;
+    }
+
+    .second > main > div {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .third > main > div:first-of-type {
+        width: 100%;
+    }
+
+    .third > main > div:last-of-type {
+        display: none;
+    }
+
+    footer > main > div {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 44%;
+    }
+
+    footer > main > div > p {
+        margin-bottom: 0.5rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        margin: 0 0.2rem;
+    }
+
+    .navBar > div > ul {
+        border: solid 1px;
+        list-style-type: none;
+        display: none;
+        flex-direction: column;
+        align-items: normal;
+        width: 10rem;
+        position: fixed;
+        top: 4rem;
+        left: 58%;
+        background-color: darkgray;
+        color: #fff;
+        padding: 1rem;
+    }
+
+    .navBar > div > ul > li {
+        margin-top: 1rem;
+    }
+
+    .navBar > div > span {
+        display: block;
+        margin-left: -1rem;
+        font-size: 1.5rem;
+        padding:0.5rem;
+        border-radius: 0.5rem;
+        background-color: darkgray;
+        color: #fff;
+    }
+
+    .first > main {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        place-items: center;
+        margin-top: 1rem;
+    }
+
+    .first > h1 {
+        text-align: start;
+    }
+
+    .first > main > div:first-of-type{
+        width:100%;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .first > main > div:last-of-type{
+        width:100%;
+        border-radius: 0.5rem;
+    }
+
+    .second > h1 {
+        text-align: start;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .second > main {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 0.5rem;
+    }
+
+    .third > h1 {
+        text-align: start;
+    }
+
+    .third > main > div:first-of-type {
+        display: none;
+    }
+
+    .third > main > div:last-of-type {
+        display:block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    footer > main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > main > ul {
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    footer > main > div {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+
+    footer > h2 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 290px) {
+    .navBar > div > h1 {
+        text-transform: capitalize;
+        font-size: 1.2rem;
+    }
+    footer > h1 {
+        font-size: 2rem;
+    }
+}
