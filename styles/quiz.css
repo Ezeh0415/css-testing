@@ -416,10 +416,27 @@ footer > h2 {
         font-weight: 900;
     }
 
+    .second > main > div {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 20rem;
+        box-shadow: 2px 2px 4px 2px #333;
+        border-radius: 1rem;
+    }
+
     .second > main {
         display: grid;
         grid-template-columns: repeat(1,1fr);
         margin-top: 0.5rem;
+    }
+
+    .second > main > div > span:first-of-type {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     .third > h1 {
@@ -449,6 +466,7 @@ footer > h2 {
     footer > main > div {
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        place-items: center;
         width: 100%;
     }
 
@@ -463,6 +481,25 @@ footer > h2 {
         text-transform: capitalize;
         font-size: 1.2rem;
     }
+
+    
+    .second > main > div {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 14rem;
+        box-shadow: 2px 2px 4px 2px #333;
+        border-radius: 1rem;
+    }
+
+    .second > main > div > span:first-of-type {
+        display: block;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 30%;
+    }
+
     footer > h1 {
         font-size: 2rem;
     }
