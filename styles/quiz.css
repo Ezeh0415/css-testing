@@ -108,6 +108,11 @@ main {
     font-size: 1.3rem;
 }
 
+.navBar > div > ul > li > a {
+    text-decoration: none;
+    color: #333;
+}
+
 .navBar > div > button {
     padding: 0.5rem 1rem;
     border-radius: 0.7rem;
@@ -364,17 +369,23 @@ footer > h2 {
         display: none;
         flex-direction: column;
         align-items: normal;
-        width: 10rem;
+        width: 43%;
         position: fixed;
         top: 4rem;
         left: 58%;
         background-color: darkgray;
         color: #fff;
         padding: 1rem;
+        transition: 1s;
     }
 
     .navBar > div > ul > li {
         margin-top: 1rem;
+    }
+
+    .navBar > div > ul > li > a {
+        text-decoration: none;
+        color: whitesmoke;
     }
 
     .navBar > div > span {
@@ -385,6 +396,7 @@ footer > h2 {
         border-radius: 0.5rem;
         background-color: darkgray;
         color: #fff;
+        transition: 2s;
     }
 
     .first > main {
@@ -480,6 +492,11 @@ footer > h2 {
     .navBar > div > h1 {
         text-transform: capitalize;
         font-size: 1.2rem;
+    }
+
+    .navBar > div > ul {
+        left: 40%;
+        width: 59%;
     }
 
     

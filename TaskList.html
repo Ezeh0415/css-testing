@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/TaskList.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="https://fonts.googleapis.com/css2?family=josefin+sans:ital,wght@0,100;0,200;
+    0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+    font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nulcsSKbmrPcLa0OT
+    92xO1BIsZ+ywDWZCvqsWgccV3gFoRBvOz+8dLJgyAHIhr35VZc2oM/gI1w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+    
+    <link rel="stylesheet" href="offline/fontawesome-free-6.4.0-web/css/all.css">
+    <title>TODO LIST</title>
+</head>
+<body>
+   <main class="main">
+      <section class="modal">
+         <h1>Edit Task</h1>
+         <div>
+            <input type="text" id="editTitle" name="editTitle" placeholder="title">
+            <input type="text" id="editTask" name="editTask" placeholder="task">
+         </div>
+         <div>
+             <button class="cancleBtn">cancle</button>
+             <button class="editBtn">edit</button>
+         </div>
+      </section>
+      <section class="popUp">
+         <div>
+            <a href="./index.html"> <i class="fas fa-arrow-left  back"></i></a>
+
+            <p class="popUp-text">task added</p>
+         </div>
+      </section>
+     <section class="input-section">
+        <div>
+           
+                <input type="text" name="title" id="title" placeholder="Title">
+                <input type="text" name="task" id="task" placeholder="task todo">
+                <button id="btn">submit</button>
+          
+        </div>
+     </section>
+     <section class="outPut-section">
+        <div>
+          
+        </div>
+     </section>
+   </main>
+   <script src="script/TaskList.js"></script>
+</body>
+</html>

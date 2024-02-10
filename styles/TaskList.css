@@ -1,0 +1,195 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    color: #333;
+}
+
+.main {
+    margin: 0 2.5rem;
+}
+
+.popUp > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.back {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: darkgray;
+}
+
+.popUp > div > p {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: solid 1px;
+    padding: 0.5rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+    transition: 2s;
+    margin-left: 100%;
+}
+
+.input-section > div {
+    border: solid 1px;
+    width: 70%;
+    height: 16rem;
+    margin: 2rem auto;
+    border-radius: 0.8rem;
+    box-shadow: 2px 2px 10px 3px #333;
+}
+
+.input-section > div  {
+    display:flex;
+    flex-direction: column;
+}
+
+.input-section > div  > input {
+    padding: 0.5rem;
+    width: 90%;
+    margin:1rem auto;
+    border: double 0.2rem;
+    border-radius: 0.5rem;
+    font-size: 1.5em;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.input-section > div  > input:last-of-type {
+    height: 2.5rem;
+}
+
+.input-section > div  > input::placeholder {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.input-section > div > button {
+    width: 50%;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: double 0.2rem;
+    border-radius: 0.7rem;
+    text-transform: capitalize;
+}
+
+.outPut-section {
+    margin-top: 4rem;
+}
+
+.outPut-section > div > article{
+    margin-top: 2rem;
+    border: solid 1px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 4px 4px 10px 3px #000;
+}
+
+.outPut-section > div > article > .task-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 7rem;
+}
+
+.status {
+    border: solid 1px darkgray;
+    position: absolute;
+    top: 56.6%;
+    left: 77%;
+    padding: 4px;
+    border-radius:0 0 1rem 0;
+    background-color: darkgray;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.outPut-section > div > article > .task-header >  h2 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.outPut-section > div > article {
+    margin-top: 1rem;
+}
+
+.outPut-section > div > article > blockquote {
+    font-size: 1.1rem;
+    word-spacing: 1px;
+    line-height: 1.2rem;
+    width: 85%;
+}
+
+
+/* modal section */
+.modal {
+    display: none;
+    border: solid 1px;
+    width: 40%;
+    height: 280px;
+    margin: 0 auto;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    background-color: darkgray;
+    border-radius: 1rem;
+}
+
+.modal > h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-top: 0.5em;
+}
+
+.modal > div:first-of-type > input {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.modal > div:first-of-type > input::placeholder {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #000;
+}
+
+.modal > div:last-of-type  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.modal > div:last-of-type > button {
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
