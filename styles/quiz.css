@@ -131,16 +131,33 @@ main {
     margin-top: 2rem;
 }
 
-.banner > div {
+.banner  {
     width: 90%;
     height: 15em;
     margin: 0 auto;
-    background-color: darkgray;
     border-radius: 0.5rem;
 }
 
+.banner img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 0.5rem;
+}
+
+.swiper {
+    width: 90%;
+    height: 15rem;
+  }
+
+  .swiper-wrapper > .swiper-slide > img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
 .first {
     margin-top: 2rem;
+    width: 100%;
 }
 
 .first > h1 {
@@ -154,11 +171,13 @@ main {
     justify-content: space-evenly;
     place-items: center;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .first > main > div:first-of-type{
     width:48%;
     border-radius: 0.5rem;
+    transition: 2s;
 }
 
 .first > main > div:first-of-type > p {
@@ -166,13 +185,21 @@ main {
     line-height: 2rem;
     font-weight: 600;
     text-transform: capitalize;
+    transition: 2s;
 }
 
 .first > main > div:last-of-type{
     width:48%;
     height: 15rem;
     border-radius: 0.5rem;
-    background-color: darkgray;
+    transition: 2s;
+}
+
+.first > main > div:last-of-type > img {
+    width: 100%;
+    height: 250px;
+    border-radius: 0.5rem;
+    transition: 2s;
 }
 
 .second {
@@ -186,27 +213,36 @@ main {
 }
 
 .second > main {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
 .second > main > div {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 14rem;
+    padding: 0.5rem;
     box-shadow: 2px 2px 4px 2px #333;
     border-radius: 1rem;
 }
 
-.second > main > div > span > p {
-    width: 4rem;
-    height: 4rem;
+.second > main > div > span > img {
+    width: 100%;
+    height: 10rem;
     margin-bottom: 0.5rem;
     margin-top: 0.3rem;
     border-radius: 0.5rem;
     background-color: darkgray;
+}
+
+.second > main > div > span > h2 {
+    font-size: 1rem;
 }
 
 .third {
@@ -233,11 +269,21 @@ main {
     border-radius: 1rem;
 }
 
+.third > main > div:first-of-type img {
+    width: 100%;
+    height: 12rem;
+}
+
 .third > main > div:last-of-type {
     width: 25%;
 }
 
-.third > main > div:last-of-type > span:first-of-type {
+.third > main > div:last-of-type > p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* .third > main > div:last-of-type > span:first-of-type {
     display:flex;
     justify-content: space-between;
 }
@@ -257,7 +303,7 @@ main {
 
 .third > main > div:last-of-type > span:last-of-type > h2 {
     font-size:2rem;
-}
+} */
 
 footer {
     margin-top: 2rem;
@@ -289,6 +335,11 @@ footer > main > ul > li {
     border-bottom: solid 1px darkgray;
 }
 
+footer > main > ul > li > a {
+    text-decoration: none;
+    color: #333;
+}
+
 footer > main > div {
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -296,12 +347,12 @@ footer > main > div {
 }
 
 footer > main > div > p {
-    background-color: darkgray;
     border-radius: 1rem;
     width: 8rem;
     height: 3rem;
     margin-bottom: 2rem;
     margin-top: 4rem;
+    color: black;
 }
 
 footer > h2 {
