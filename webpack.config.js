@@ -3,30 +3,20 @@ const path = require("path")
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
-    output : {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle3.js'
+    entry: {
+        taskList: './src/TaskList.js',
+        quiz: './src/quiz.js',
+        index: './src/index.js'
     },
-    watch: true
-}
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].bundle.js' // Use [name] placeholder for dynamic output filenames
+    },
+    watch: true,
+    // Add module rules if needed
+    // module: {
+    //     rules: [
+    //         // Add loaders for different file types
+    //     ]
+    }
 
-module.exports = {
-    mode: 'development',
-    entry: './src/TaskList.js',
-    output : {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
-    },
-    watch: true
-}
-
-module.exports = {
-    mode: 'development',
-    entry: './src/quiz.js',
-    output : {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle2.js'
-    },
-    watch: true
-}
