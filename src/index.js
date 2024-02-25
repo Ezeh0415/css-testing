@@ -50,6 +50,7 @@ const auth = getAuth();
 window.addEventListener("load", function () {
     let API_KEY = "6065a270b19a4c6c8b3bc836f66a7a67";
     loader.style.display = "none"
+    authMain.style.display = "none"
     async function fetchData(url) {
         try {
           // Before fetching, set loading state
