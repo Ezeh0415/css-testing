@@ -6,7 +6,10 @@ module.exports = {
     entry: {
         taskList: './src/TaskList.js',
         quiz: './src/quiz.js',
-        index: './src/index.js'
+        index: './src/index.js',
+        signup: './src/signup.js',
+        login: './src/login.js',
+        profile: './src/profile.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

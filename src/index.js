@@ -1,18 +1,3 @@
-import {initializeApp} from "firebase/app";
-import {
-  getAuth,
-  createUserWithEmailAndPassword,
-} from "firebase/auth"
-
-const firebaseConfig = {
-  apiKey: "AIzaSyDJvn_GqogsJU3XE1SXlBgFVbi4bEPUd0w",
-  authDomain: "fir-9-dojo-4da5d.firebaseapp.com",
-  projectId: "fir-9-dojo-4da5d",
-  storageBucket: "fir-9-dojo-4da5d.appspot.com",
-  messagingSenderId: "250392842527",
-  appId: "1:250392842527:web:ac688b160693fce282e02a"
-};
-
 let authLi1 = document.querySelector(".li1");
 let authLi2 = document.querySelector(".li2");
 let authLi3 = document.querySelector(".li3");
@@ -21,31 +6,10 @@ let authLi5 = document.querySelector(".li5");
 let authLi6 = document.querySelector(".li6");
 let authMain = document.querySelector(".auth-main");
 let loader = document.querySelector(".loader");
+let signUpBtn = document.querySelector(".signUpBtn");
+let loginBtn = document.querySelector(".loginBtn");
 
 
-
-
-// initialized firebase
-initializeApp(firebaseConfig);
-
-// adding auth
-const auth = getAuth();
-
-// adding sign up 
-// const signUpForm = document.querySelector(".signUpForm");
-// signUpForm.addEventListener("submit",(event) => {
-//   event.preventDefault();
-//   const email = signUpForm.email.value;
-//   const password = signUpForm.password.value;
-//   createUserWithEmailAndPassword(auth,email,password)
-//    .then((cred) => {
-//     console.log("user created",cred.user);
-//     signUpForm.reset();
-//    })
-//    .catch((err) => {
-//      console.log(err.message)
-//    })
-// })
 
 window.addEventListener("load", function () {
     let API_KEY = "6065a270b19a4c6c8b3bc836f66a7a67";
@@ -104,4 +68,6 @@ window.addEventListener("load", function () {
 
         }
       });
+
+      
 });

@@ -1,0 +1,61 @@
+.profileMain {
+    margin: 0 1rem;
+}
+
+.imgDiv {
+    border: solid 1px ;
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 300px;
+    margin-bottom: 1rem;
+}
+
+.nameDiv {
+    margin-top: 1rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nameDiv > span  {
+    display: flex;
+    border-bottom: solid 1px;
+    align-items: center;
+}
+
+.nameDiv > span > h2 {
+    text-transform: capitalize;
+  
+}
+
+.nameDiv > span > h3 {
+   margin: 0 0 0 0.8rem;
+   font-weight: lighter;
+   text-transform: capitalize;
+}
+
+.buttonDiv {
+    width: 20%;
+    margin-left: 80%;
+    margin-top: 1rem;
+    padding: 1rem;
+} 
+
+.buttonDiv  button {
+    width: 70%;
+    padding: 0.2rem;
+    float: right;
+    background-color: darkgray;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.backBtn > a {
+    color: #333;
+    text-decoration: none;
+    text-transform: capitalize;
+    border: solid 1px darkgray;
+    padding: 5px;
+    border-radius: 0.5rem;
+    background-color: darkgray;
+}

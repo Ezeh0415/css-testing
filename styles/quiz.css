@@ -115,9 +115,11 @@ section:last-of-type div:last-of-type ul li:hover {
     color: #333;
 }
 
-.navBar > div > button {
+.navBar > div > a {
     padding: 0.5rem 1rem;
-    border-radius: 0.7rem;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
     font-size: 1rem;
     background-color: darkgray;
     border: none;
