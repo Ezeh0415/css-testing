@@ -13,14 +13,10 @@ let loginBtn = document.querySelector(".loginBtn");
 
 window.addEventListener("load", function () {
     let API_KEY = "6065a270b19a4c6c8b3bc836f66a7a67";
-    loader.style.display = "none"
-    authMain.style.display = "none"
     async function fetchData(url) {
         try {
           // Before fetching, set loading state
           console.log('Loading...');
-          authMain.style.display = "none"
-          loader.style.display = "block"
           
           const response = await fetch(url);
       
@@ -35,8 +31,6 @@ window.addEventListener("load", function () {
       
           // After successful fetching, log data
           console.log('Data fetched:', data);
-          authMain.style.display = "block"
-          loader.style.display = "none"
           // Return the fetched data
           return data;
         } catch (error) {

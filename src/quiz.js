@@ -23,7 +23,7 @@ let footerP4 = document.querySelector("footer .p4");
 let footerP5 = document.querySelector("footer .p5");
 let footerP6 = document.querySelector("footer .p6");
 let homeMain = document.querySelector(".home-main")
-let loader = document.querySelector(".loader")
+// let loader = document.querySelector(".loader")
 let newsCount = 0;
 let newsCount1 = 2;
 let newsCount2 = 3;
@@ -98,7 +98,6 @@ navClose.style.display = "none";
 
 
 window.addEventListener('load', function() {
-    loader.style.display = "none"
     let API_KEY = "6065a270b19a4c6c8b3bc836f66a7a67";
     // let url = `https://newsapi.org/v2/everything?q=keyword&apiKey=${API_KEY}`;
     // let url2 = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_KEY}`;
@@ -108,8 +107,6 @@ window.addEventListener('load', function() {
       try {
         // Before fetching, set loading state
         console.log('Loading...');
-        homeMain.style.display = "none"
-        loader.style.display = "block"
         
         const response = await fetch(url);
     
@@ -124,8 +121,6 @@ window.addEventListener('load', function() {
         
         // After successful fetching, log data
         console.log('Data fetched:', data);
-        homeMain.style.display = "block"
-        loader.style.display = "none"
         // Return the fetched data
         return data;
       } catch (error) {

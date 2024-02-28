@@ -32,7 +32,7 @@ signUpForm.addEventListener("submit",(event) => {
     createUserWithEmailAndPassword(auth,email,password)
      .then((cred) => {
       console.log("user created",cred.user.email);
-      window.Location.href = "html/Home.html";
+      window.Location.href = "Home.html";
       signUpForm.reset();
      })
      .catch((err) => {
